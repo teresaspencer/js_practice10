@@ -1,6 +1,6 @@
 # Practice Assignment 10
 
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/gitdagray/js_practice10)
+[![Remix on Glitch](https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/gitdagray/js_practice10)
 
 **Start by clicking the Remix on Glitch button above.**
 
