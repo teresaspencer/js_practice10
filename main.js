@@ -7,10 +7,16 @@ given in the comments.
 
 // 1) Define a function named getTheTable that returns the table
 // element in the HTML document that has the id "myTable".
+function getTheTable() {
+    return document.getElementById("myTable");
+}
 
 // 2) Define a function named getAllParagraphs that returns a
 // NodeList containing all paragraph nodes inside the "myPage"
 // section element of the HTML document.
+function getAllParagraphs() {
+    return myPage.getElementsByTagName("p");
+}
 
 // 3) Define a function named makeItalic.
 // The function should change the CSS style of
@@ -21,6 +27,10 @@ given in the comments.
 /////////////
 // Hint: You will need a loop.
 // Also reference CSS in JavaScript.
+function makeItalic() {
+    const list = document.querySelector(".even");
+    const setText = document.body.querySelector;
+}
 
 // 4) Define a function named createBorders that selects
 // the table inside the "myPage" section. The function
@@ -30,6 +40,12 @@ given in the comments.
 ////////////
 // Hint: You can build a selector from the result
 // of another selector.
+function createBorders() {
+    const table = getTheTable();
+    
+    return table;
+
+}
 
 // 5) Define a function named getTheListItem that accepts two
 // number parameters. The first parameter (num1) is the number of
