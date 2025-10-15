@@ -66,8 +66,8 @@ function createBorders() {
 ////////////////////////
 // Hint: MDN for nth-of-type and nth-child selectors
 function getTheListItem(num1, num2) {
-    const list = document.querySelectorAll("#myPage");
-    return list;
+    const listItem = document.querySelector(`#myPage ul:nth-of-type(${num1}) li:nth-child(${num2})`);
+    return listItem.textContent;
 }
 
 // 6) Define a function named changeBgColor that changes the
