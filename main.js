@@ -28,8 +28,12 @@ function getAllParagraphs() {
 // Hint: You will need a loop.
 // Also reference CSS in JavaScript.
 function makeItalic() {
-    const list = document.querySelector(".even");
-    const setText = document.body.querySelector;
+    //const list = document.getElementsByClassName("even");
+    const list = document.querySelectorAll(".even");
+    for (let i = 0; i < list.length; i++) {
+        list[i].style.fontStyle = "italic";
+    }
+    return list;
 }
 
 // 4) Define a function named createBorders that selects
@@ -42,7 +46,7 @@ function makeItalic() {
 // of another selector.
 function createBorders() {
     const table = getTheTable();
-    
+    table.style.border = "2px #000";
     return table;
 
 }
@@ -59,9 +63,18 @@ function createBorders() {
 // "myPage" section element of the HTML document.
 ////////////////////////
 // Hint: MDN for nth-of-type and nth-child selectors
+function getTheListItem(num1, num2) {
+    const list = document.querySelectorAll("#myPage");
+    return list;
+}
 
 // 6) Define a function named changeBgColor that changes the
 // background color of the "myPage" section. The function
 // should accept one parameter named "color" that will be
 // the color the function changes the background to.
 // The function should return the "myPage" section element.
+function changeBgColor(color) {
+    const item = document.querySelectorAll("#myPage");
+    item.style.color = color;
+    return item;
+}
