@@ -46,9 +46,11 @@ function makeItalic() {
 // of another selector.
 function createBorders() {
     const table = getTheTable();
-    table.style.border = "2px #000";
+    const cells = table.querySelectorAll("td, th");
+    for (let i = 0; i < cells.length; i++) {
+        cells[i].style.border = "2px solid #000";
+    }
     return table;
-
 }
 
 // 5) Define a function named getTheListItem that accepts two
@@ -74,7 +76,7 @@ function getTheListItem(num1, num2) {
 // the color the function changes the background to.
 // The function should return the "myPage" section element.
 function changeBgColor(color) {
-    const item = document.querySelectorAll("#myPage");
-    item.style.color = color;
+    const item = document.querySelector("#myPage");
+    item.style.backgroundColor = color;
     return item;
 }
